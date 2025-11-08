@@ -1,0 +1,103 @@
+:root {
+    --naija-green: #008753;
+    --naija-white: #FFFFFF;
+    --naija-yellow: #FFC72C;
+}
+
+.bg-green {
+    background-color: var(--naija-green) !important;
+}
+
+.text-green {
+    color: var(--naija-green) !important;
+}
+
+.btn-green {
+    background-color: var(--naija-green);
+    border-color: var(--naija-green);
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #006741;
+    border-color: #006741;
+    color: white;
+}
+
+.btn-outline-green {
+    border-color: var(--naija-green);
+    color: var(--naija-green);
+}
+
+.btn-outline-green:hover {
+    background-color: var(--naija-green);
+    color: white;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--naija-green) 0%, #006741 100%);
+    color: white;
+    padding: 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.book-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.book-placeholder {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.shadow {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}

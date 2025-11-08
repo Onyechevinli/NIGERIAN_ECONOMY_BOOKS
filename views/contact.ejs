@@ -1,0 +1,59 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="text-center text-green mb-5">Contact Us</h1>
+            
+            <% if (success) { %>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Thank you, <%= name %>!</strong> Your message has been received. We'll get back to you soon.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            <% } %>
+
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <form method="POST" action="/contact">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-green btn-lg">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <h5 class="text-green">Book Inquiries</h5>
+                            <p class="mb-1">books@naijaeconomicinsight.com</p>
+                            <p class="mb-0">+234 813 742 5765</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <h5 class="text-green">General Inquiries</h5>
+                            <p class="mb-1">info@naijaeconomicinsight.com</p>
+                            <p class="mb-0">+234 907 078 2052</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

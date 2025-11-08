@@ -1,0 +1,27 @@
+{
+  "name": "nigerian-economy-books",
+  "version": "1.0.0",
+  "description": "Web app about Nigeria's economy and book sales",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "nigeria",
+    "economy",
+    "books",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
